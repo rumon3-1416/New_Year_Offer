@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --merriweather-f: 'Merriweather', serif;
+  --inter-f: 'Inter', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+}
+
+#container {
+  width: 100%;
+}
+
+/* Common Styles */
+.common-width {
+  width: 95%;
+  max-width: 1200px;
+}
+section {
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-bg {
+  width: 100%;
+  position: relative;
+}
+.section-bg img {
+  width: 100%;
+}
+.merriweather-font {
+  font-family: 'Merriweather', serif;
+}
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+/* Banner */
+.banner-sec {
+  margin-top: 1.5rem;
+}
+.banner-content {
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(
+    180deg,
+    rgb(7, 2, 17),
+    rgba(7, 2, 17, 0) 100%
+  );
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-sub-heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+.banner-heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 72px;
+}
+
+/* Main */
+/* Categories */
+.categories-content {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+}
+.categories-content h1 {
+  color: red;
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.categories-content p {
+  color: red;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.categories-content h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.categories-content img {
+  width: 100%;
+}
+
+/* Welcome Party */
+.welcome-content-p {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgb(7, 2, 17),
+    rgba(7, 2, 17, 0) 100%
+  );
+  border-radius: 1rem;
+}
+.welcome-content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.welcome-desc {
+  width: 64%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: white;
+}
+.welcome-desc h1 {
+  font-family: var(--merriweather-f);
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+}
+.welcome-desc p {
+  font-family: var(--inter-f);
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
+}
+.welcome-desc button {
+  color: white;
+  background-color: transparent;
+  font-family: var(--inter-f);
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+}
+.welcome-desc button:hover {
+  /* background-color: rgba(255, 183, 0, 0.657); */
+  box-shadow: 1px 1px 2px lightgray;
+  text-shadow: 2px 2px 2px black;
+}
+.welcome-img {
+  width: 36%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.welcome-img img {
+  width: 85%;
+}
+
+/* Join Address */
+.join-address {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0) 100%
+  );
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join-address p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0.4rem 0;
+}
+.join-address p span {
+  color: red;
+}
+.join-address button {
+  color: white;
+  background-color: red;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.join-address button:hover {
+  transform: scale(1.1);
+}
+
+/* Media */
+@media screen and (max-width: 992px) {
+  /* Banner */
+  .banner-sub-heading {
+    font-size: 22px;
+  }
+  .banner-heading {
+    font-size: 48px;
+  }
+
+  /* Categories */
+  section {
+    margin-bottom: 80px;
+  }
+  .categories-content h1 {
+    font-size: 58px;
+    margin-bottom: 2rem;
+  }
+  .categories-content p {
+    font-size: 16px;
+    margin-bottom: 0.7rem;
+  }
+  .categories-content h3 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+
+  /* welcome-desc */
+  .welcome-desc h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+  .welcome-desc p {
+    font-size: 11px;
+    margin-bottom: 1.5rem;
+  }
+  .welcome-desc button {
+    font-size: 14px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+  }
+  /* Join Address */
+  .join-address {
+    height: 375px;
+  }
+  .join-address p {
+    font-size: 25px;
+    padding: 0.3rem 0;
+  }
+  .join-address button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    margin-top: 2.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Banner */
+  .banner-sub-heading {
+    font-size: 19px;
+  }
+  .banner-heading {
+    font-size: 36px;
+  }
+
+  /* Categories */
+  section {
+    margin-bottom: 60px;
+  }
+  .categories-content h1 {
+    font-size: 45px;
+    margin-bottom: 1.5rem;
+  }
+  .categories-content p {
+    font-size: 12px;
+    margin-bottom: 0.6rem;
+  }
+  .categories-content h3 {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* welcome-desc */
+  .join-address {
+    height: 400px;
+  }
+  .welcome-desc h1 {
+    font-size: 33px;
+    letter-spacing: 1px;
+    margin-bottom: 0.7rem;
+  }
+  .welcome-desc p {
+    font-size: 11px;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Join Address */
+  .join-address {
+    height: 310px;
+  }
+  .join-address p {
+    font-size: 20px;
+    padding: 0.2rem 0;
+  }
+  .join-address button {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* Banner */
+  .banner-sub-heading {
+    font-size: 12px;
+  }
+  .banner-heading {
+    font-size: 24px;
+  }
+  .categories-content {
+    width: 75%;
+  }
+
+  /* Categories */
+  section {
+    margin-bottom: 40px;
+  }
+
+  /* welcome-desc */
+  .welcome-desc h1 {
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+  }
+  .welcome-desc p {
+    font-size: 8px;
+    margin-bottom: 0.8rem;
+  }
+  .welcome-desc button {
+    font-size: 10px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 2px lightgray;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  /* Join Address */
+  .join-address {
+    height: 245px;
+  }
+  .join-address p {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+  }
+  .join-address button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+    margin-top: 1.6rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* Banner */
+  .banner-sub-heading {
+    font-size: 6px;
+  }
+  .banner-heading {
+    font-size: 12px;
+  }
+
+  /* Categories */
+  section {
+    margin-bottom: 20px;
+  }
+  .categories-content h1 {
+    font-size: 22px;
+    margin-bottom: 0.8rem;
+  }
+  .categories-content p {
+    font-size: 8px;
+    margin-bottom: 0.5rem;
+  }
+  .categories-content h3 {
+    font-size: 12px;
+    margin-bottom: 0.8rem;
+  }
+
+  /* welcome-desc */
+  .welcome-desc h1 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .welcome-desc p {
+    font-size: 6px;
+    margin-bottom: 0.5rem;
+  }
+  .welcome-desc button {
+    font-size: 8px;
+  }
+
+  /* Join Address */
+  .join-address {
+    height: 180px;
+  }
+  .join-address p {
+    font-size: 0.7rem;
+    padding: 1.2px 0;
+  }
+  .join-address button {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
